@@ -15,6 +15,9 @@ type Todo struct {
 }
 
 type User struct {
-	ID   string `json:"id"`
-	Name string `json:"name"`
+	ID         string               `json:"id"`
+	Name       string               `json:"name"`
+	ProjectV2  *ProjectV2           `json:"projectV2"`
+	ProjectV2s *ProjectV2Connection `json:"projectV2s"`
 }
+

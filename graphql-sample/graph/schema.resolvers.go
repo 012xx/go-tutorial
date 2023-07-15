@@ -7,9 +7,8 @@ package graph
 import (
 	"context"
 	"fmt"
-
-	"github.com/012xx/graphql-sample/graph/model"
-	"github.com/012xx/graphql-sample/internal"
+	"my_gql_server/graph/model"
+	"my_gql_server/internal"
 )
 
 // CreateTodo is the resolver for the createTodo field.
