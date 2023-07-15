@@ -31,4 +31,8 @@ type mutationResolver struct{ *Resolver }
 type queryResolver struct{ *Resolver }
 
 // User is the resolver for the user field.
-func (r *queryResolver) User(ctx context.Context, name string) (*model.User, error)
+func (r *queryResolver) User(ctx context.Context, name string) (*model.User, error) {
+	return r.Srv.GetUserByName(ctx, name)
+}
+
+//
