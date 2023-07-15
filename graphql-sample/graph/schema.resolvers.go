@@ -29,3 +29,6 @@ func (r *Resolver) Query() internal.QueryResolver { return &queryResolver{r} }
 
 type mutationResolver struct{ *Resolver }
 type queryResolver struct{ *Resolver }
+
+// User is the resolver for the user field.
+func (r *queryResolver) User(ctx context.Context, name string) (*model.User, error)
